@@ -12,7 +12,7 @@
    CONCEPTS: # map or dictionary or object. Referred like {}
      CI: jenkins 
      SCRIPTING: "ansible, Terraform, shell, python" 
-   tasks: 
+  tasks: 
     - name: print course information 
       ansible.builtin.debug: 
        msg: "course is {{ COURSE }}, Duration:{{ DURATION }},is_live?:{{ IS_LIVE }},Tools {{ TOOLS }},concepts are:{{ CONCEPTS }}"  
