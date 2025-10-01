@@ -8,7 +8,7 @@
      ansible.builtin.debug: 
       msg: "hello, {{ person | default('jyothi') }}" 
 
-   - name: check undefine variables 
+   - name: convert string in to list  
      ansible.builtin.debug: 
       msg: "hello, {{ persons | split(',') }}"    
     
