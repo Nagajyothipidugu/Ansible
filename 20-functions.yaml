@@ -10,5 +10,5 @@
 
    - name: check undefine variables 
      ansible.builtin.debug: 
-      msg: "hello, {{ person | split(',') }}"    
+      msg: "hello, {{ persons | split(',') }}"    
     
