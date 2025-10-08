@@ -1,0 +1,25 @@
+- name: Variables preferences 
+  hosts: local 
+  connection: local 
+  # vars: 
+  #  GREETING: "Hello from play"
+  # vars_files: 
+  #  - course.yaml 
+  # vars_prompt: 
+  #  - name: GREETING 
+  #    prompt: please enter the greeting 
+  #    private: false 
+  tasks: 
+    - name: print the greeting 
+      # vars: 
+      #  GREETING: "Hello from task"   
+      ansible.builtin.debug: 
+        msg: "{{ GREETING }}"    
+
+
+  #  1. command line or orgs 
+  #  2. task level variables 
+  #  3. var file variables 
+  #  4. prompt level variables 
+  #  5. play level variables 
+  #  6. varaibles from inventory       
