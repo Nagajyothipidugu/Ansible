@@ -12,6 +12,6 @@
   tasks: 
    - name: Course info 
      ansible.builtin.debug: 
-       msg: "HI, This is your  {{ USERNAME }} and {{ PASSWORD }}"
+       msg: "HI, This is your Username {{ USERNAME }} and  Password {{ PASSWORD }}"
 
 
