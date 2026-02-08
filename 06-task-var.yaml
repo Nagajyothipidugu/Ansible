@@ -1,20 +1,19 @@
-- name: Play level variables 
+- name: Task level variables 
   hosts: local 
   connection: local 
   vars: 
-    COURSE: Aws with DevOps # eual to COURSE=Ansible , In shell we refer  $var or ${var}
-    DURATION: 10HR 
-    TRAINER: SivaKumar
-
+   Course: "AWS with DevOps"  
+   Duration: "100HR" 
+   Trainer: "sivakumar"
   tasks: 
-   - name: print course information 
+   - name: Print course info 
      vars: 
-       COURSE: Ansible
+       Course: "Ansible"
+       Duration: "10HR" 
+       Trainer: "Sivakumar" 
      ansible.builtin.debug: 
-     #vars reference should be surrounded by ""
-      msg: "Hello {{ COURSE }}, Course duration: {{ DURATION  }}, Trainer is {{ TRAINER }}"
-      
-   - name: print course information 
+       msg: "Course is {{ Course}}, Duration is {{ Duration }}, Trainer is {{ Trainer }}"
+
+   - name: print course info 
      ansible.builtin.debug: 
-     #vars reference should be surrounded by ""
-      msg: "Hello {{ COURSE }}, Course duration: {{ DURATION  }}, Trainer is {{ TRAINER }}"       
+      msg: "Course is {{ Course}}, Duration is {{ Duration }}, Trainer is {{ Trainer }}"       
