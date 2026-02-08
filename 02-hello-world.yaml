@@ -3,5 +3,6 @@
   connection: local 
   tasks: 
     - name: print the message
-      anisble.builtin.debug: 
+      ansi
+      ble.builtin.debug: 
         msg: "Hello jyothi..you are doing great"
