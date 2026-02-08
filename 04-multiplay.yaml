@@ -3,9 +3,9 @@
   connection: local 
   tasks: 
    - name: Hello from Taks-1 and play-1 
-     anisble.builtin.debug: 
+     ansible.builtin.debug: 
       msg: "Hello From Play-1 and Task-1"
-      
+
    - name: Hello from Play-1 and task-2 
      ansible.builtin.debug: 
        msg: "Hello from Play-1 and task-2"   
